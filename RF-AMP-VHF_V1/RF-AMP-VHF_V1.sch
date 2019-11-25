@@ -1,0 +1,329 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "VHF Power Amplifier"
+Date "2019-11-24"
+Rev "1"
+Comp "HB9GKW"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:DB15_Male J?
+U 1 1 5DDE4C6B
+P 1650 5750
+F 0 "J?" H 1556 4758 50  0000 C CNN
+F 1 "DB15_Male" H 1556 4849 50  0000 C CNN
+F 2 "Connector_Dsub:DSUB-15_Male_EdgeMount_P2.77mm" H 1650 5750 50  0001 C CNN
+F 3 " ~" H 1650 5750 50  0001 C CNN
+	1    1650 5750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 5DDF01D4
+P 2025 6575
+F 0 "#PWR?" H 2025 6325 50  0001 C CNN
+F 1 "Earth" H 2025 6425 50  0001 C CNN
+F 2 "" H 2025 6575 50  0001 C CNN
+F 3 "~" H 2025 6575 50  0001 C CNN
+	1    2025 6575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 6450 2025 6450
+Wire Wire Line
+	2025 6450 2025 6575
+Wire Wire Line
+	1950 6050 2025 6050
+Wire Wire Line
+	2025 6050 2025 6150
+Connection ~ 2025 6450
+Wire Wire Line
+	1950 6150 2025 6150
+Connection ~ 2025 6150
+Wire Wire Line
+	2025 6150 2025 6450
+Wire Wire Line
+	1950 5750 2025 5750
+Wire Wire Line
+	2025 5750 2025 5850
+Connection ~ 2025 6050
+Wire Wire Line
+	1950 5350 2025 5350
+Wire Wire Line
+	2025 5350 2025 5750
+Connection ~ 2025 5750
+$Comp
+L power:+12V #PWR?
+U 1 1 5DDF2CBD
+P 3450 4600
+F 0 "#PWR?" H 3450 4450 50  0001 C CNN
+F 1 "+12V" H 3465 4773 50  0000 C CNN
+F 2 "" H 3450 4600 50  0001 C CNN
+F 3 "" H 3450 4600 50  0001 C CNN
+	1    3450 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 5050 2025 5050
+$Comp
+L power:-12V #PWR?
+U 1 1 5DDF5BB5
+P 3475 5425
+F 0 "#PWR?" H 3475 5525 50  0001 C CNN
+F 1 "-12V" H 3490 5598 50  0000 C CNN
+F 2 "" H 3475 5425 50  0001 C CNN
+F 3 "" H 3475 5425 50  0001 C CNN
+	1    3475 5425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 5650 2450 5650
+Text GLabel 2075 6250 2    50   Output ~ 0
+GATE_EN
+Wire Wire Line
+	1950 6250 2075 6250
+Text GLabel 2075 5150 2    50   Input ~ 0
+TEMP
+Wire Wire Line
+	1950 5150 2075 5150
+Text GLabel 2075 5550 2    50   Input ~ 0
+RF_OL
+Wire Wire Line
+	1950 5550 2075 5550
+Text GLabel 2075 5950 2    50   Input ~ 0
+FWD
+Wire Wire Line
+	1950 5950 2075 5950
+Text GLabel 2075 6350 2    50   Input ~ 0
+REF
+Wire Wire Line
+	1950 6350 2075 6350
+Wire Wire Line
+	1950 5850 2025 5850
+Connection ~ 2025 5850
+Wire Wire Line
+	2025 5850 2025 6050
+Wire Wire Line
+	1950 5250 2025 5250
+Wire Wire Line
+	2025 5250 2025 5050
+$Comp
+L Device:L_Core_Ferrite L?
+U 1 1 5DE57F4E
+P 2900 5450
+F 0 "L?" V 3075 5400 50  0000 L CNN
+F 1 "3u3" V 3000 5375 50  0000 L CNN
+F 2 "" H 2900 5450 50  0001 C CNN
+F 3 "~" H 2900 5450 50  0001 C CNN
+	1    2900 5450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5DE57F58
+P 2675 5625
+F 0 "C?" H 2767 5671 50  0000 L CNN
+F 1 "100n" H 2767 5580 50  0000 L CNN
+F 2 "" H 2675 5625 50  0001 C CNN
+F 3 "~" H 2675 5625 50  0001 C CNN
+	1    2675 5625
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 5DE57F62
+P 2675 5750
+F 0 "#PWR?" H 2675 5500 50  0001 C CNN
+F 1 "Earth" H 2675 5600 50  0001 C CNN
+F 2 "" H 2675 5750 50  0001 C CNN
+F 3 "~" H 2675 5750 50  0001 C CNN
+	1    2675 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2675 5750 2675 5725
+Wire Wire Line
+	2675 5525 2675 5450
+Wire Wire Line
+	2675 5450 2750 5450
+$Comp
+L Device:C_Small C?
+U 1 1 5DE57F6F
+P 3125 5625
+F 0 "C?" H 3217 5671 50  0000 L CNN
+F 1 "100n" H 3217 5580 50  0000 L CNN
+F 2 "" H 3125 5625 50  0001 C CNN
+F 3 "~" H 3125 5625 50  0001 C CNN
+	1    3125 5625
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 5DE57F79
+P 3125 5750
+F 0 "#PWR?" H 3125 5500 50  0001 C CNN
+F 1 "Earth" H 3125 5600 50  0001 C CNN
+F 2 "" H 3125 5750 50  0001 C CNN
+F 3 "~" H 3125 5750 50  0001 C CNN
+	1    3125 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3125 5750 3125 5725
+Wire Wire Line
+	3125 5525 3125 5450
+Wire Wire Line
+	3050 5450 3125 5450
+Wire Wire Line
+	3025 4625 3100 4625
+Wire Wire Line
+	3100 4700 3100 4625
+Wire Wire Line
+	3100 4925 3100 4900
+$Comp
+L power:Earth #PWR?
+U 1 1 5DE47D70
+P 3100 4925
+F 0 "#PWR?" H 3100 4675 50  0001 C CNN
+F 1 "Earth" H 3100 4775 50  0001 C CNN
+F 2 "" H 3100 4925 50  0001 C CNN
+F 3 "~" H 3100 4925 50  0001 C CNN
+	1    3100 4925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5DE47D66
+P 3100 4800
+F 0 "C?" H 3192 4846 50  0000 L CNN
+F 1 "100n" H 3192 4755 50  0000 L CNN
+F 2 "" H 3100 4800 50  0001 C CNN
+F 3 "~" H 3100 4800 50  0001 C CNN
+	1    3100 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 4625 2725 4625
+Wire Wire Line
+	2650 4700 2650 4625
+Wire Wire Line
+	2650 4925 2650 4900
+$Comp
+L power:Earth #PWR?
+U 1 1 5DE424FA
+P 2650 4925
+F 0 "#PWR?" H 2650 4675 50  0001 C CNN
+F 1 "Earth" H 2650 4775 50  0001 C CNN
+F 2 "" H 2650 4925 50  0001 C CNN
+F 3 "~" H 2650 4925 50  0001 C CNN
+	1    2650 4925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5DE393A7
+P 2650 4800
+F 0 "C?" H 2742 4846 50  0000 L CNN
+F 1 "100n" H 2742 4755 50  0000 L CNN
+F 2 "" H 2650 4800 50  0001 C CNN
+F 3 "~" H 2650 4800 50  0001 C CNN
+	1    2650 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L_Core_Ferrite L?
+U 1 1 5DE2B284
+P 2875 4625
+F 0 "L?" V 3050 4575 50  0000 L CNN
+F 1 "3u3" V 2975 4550 50  0000 L CNN
+F 2 "" H 2875 4625 50  0001 C CNN
+F 3 "~" H 2875 4625 50  0001 C CNN
+	1    2875 4625
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2025 5050 2025 4625
+Wire Wire Line
+	2025 4625 2650 4625
+Connection ~ 2025 5050
+Connection ~ 2650 4625
+Wire Wire Line
+	3450 4925 3450 4900
+$Comp
+L power:Earth #PWR?
+U 1 1 5DE795F5
+P 3450 4925
+F 0 "#PWR?" H 3450 4675 50  0001 C CNN
+F 1 "Earth" H 3450 4775 50  0001 C CNN
+F 2 "" H 3450 4925 50  0001 C CNN
+F 3 "~" H 3450 4925 50  0001 C CNN
+	1    3450 4925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5DE795FF
+P 3450 4800
+F 0 "C?" H 3542 4846 50  0000 L CNN
+F 1 "10u" H 3542 4755 50  0000 L CNN
+F 2 "" H 3450 4800 50  0001 C CNN
+F 3 "~" H 3450 4800 50  0001 C CNN
+	1    3450 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 4600 3450 4625
+Wire Wire Line
+	3100 4625 3450 4625
+Connection ~ 3100 4625
+Connection ~ 3450 4625
+Wire Wire Line
+	3450 4625 3450 4700
+Wire Wire Line
+	1950 5450 2450 5450
+Connection ~ 2675 5450
+Wire Wire Line
+	3475 5750 3475 5725
+$Comp
+L power:Earth #PWR?
+U 1 1 5DE948EC
+P 3475 5750
+F 0 "#PWR?" H 3475 5500 50  0001 C CNN
+F 1 "Earth" H 3475 5600 50  0001 C CNN
+F 2 "" H 3475 5750 50  0001 C CNN
+F 3 "~" H 3475 5750 50  0001 C CNN
+	1    3475 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5DE948F6
+P 3475 5625
+F 0 "C?" H 3567 5671 50  0000 L CNN
+F 1 "10u" H 3567 5580 50  0000 L CNN
+F 2 "" H 3475 5625 50  0001 C CNN
+F 3 "~" H 3475 5625 50  0001 C CNN
+	1    3475 5625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3475 5425 3475 5450
+Wire Wire Line
+	3125 5450 3475 5450
+Connection ~ 3475 5450
+Wire Wire Line
+	3475 5450 3475 5525
+Connection ~ 3125 5450
+Wire Wire Line
+	2450 5650 2450 5450
+Connection ~ 2450 5450
+Wire Wire Line
+	2450 5450 2675 5450
+$EndSCHEMATC
