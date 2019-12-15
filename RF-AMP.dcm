@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TMP36xS
+D Low Voltage Temperature Sensor, SOIC-8
+K Temperature Sensor SOIC-8
+F https://www.analog.com/media/en/technical-documentation/data-sheets/TMP35_36_37.pdf
+$ENDCMP
+#
+#End Doc Library

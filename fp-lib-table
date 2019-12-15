@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name RF-AMP-VHF_V1)(type KiCad)(uri ${KIPRJMOD}/RF-AMP-VHF_V1.pretty)(options "")(descr ""))
+)
