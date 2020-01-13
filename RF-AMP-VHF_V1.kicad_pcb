@@ -1,9 +1,9 @@
-(kicad_pcb (version 20171130) (host pcbnew 5.1.5+dfsg1-2~bpo10+1)
+(kicad_pcb (version 20171130) (host pcbnew "(5.1.5)-3")
 
   (general
     (thickness 1.6)
     (drawings 56)
-    (tracks 899)
+    (tracks 897)
     (zones 0)
     (modules 146)
     (nets 68)
@@ -68,7 +68,7 @@
     (pad_to_mask_clearance 0.051)
     (solder_mask_min_width 0.25)
     (aux_axis_origin 0 0)
-    (visible_elements FFFFFF7F)
+    (visible_elements 7FFFFFFF)
     (pcbplotparams
       (layerselection 0x010e0_ffffffff)
       (usegerberextensions false)
@@ -6481,7 +6481,6 @@
   (via (at 190.25 73.05) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1) (tstamp 5E10A9EB))
   (via (at 193.25 73.05) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1) (tstamp 5E10A9ED))
   (via (at 196.25 73.05) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1) (tstamp 5E10A9EF))
-  (via (at 152.75 75.85) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1) (tstamp 5E10A9F3))
   (via (at 155.75 75.85) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1) (tstamp 5E10A9F5))
   (via (at 158.75 75.85) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1) (tstamp 5E10A9F7))
   (via (at 161.75 75.85) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1) (tstamp 5E10A9F9))
@@ -6495,7 +6494,6 @@
   (via (at 166.25 78.65) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1) (tstamp 5E10AA1B))
   (via (at 193.25 78.65) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1) (tstamp 5E10AA2D))
   (via (at 196.25 78.65) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1) (tstamp 5E10AA2F))
-  (via (at 152.75 81.45) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1) (tstamp 5E10AA33))
   (via (at 155.75 81.45) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1) (tstamp 5E10AA35))
   (via (at 158.75 81.45) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1) (tstamp 5E10AA37))
   (via (at 161.75 81.45) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1) (tstamp 5E10AA39))
