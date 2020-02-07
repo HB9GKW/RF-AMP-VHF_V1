@@ -38,7 +38,7 @@
   )
 
   (setup
-    (last_trace_width 0.5)
+    (last_trace_width 0.25)
     (user_trace_width 0.5)
     (user_trace_width 0.75)
     (user_trace_width 1)
@@ -4203,7 +4203,7 @@
     (fp_text reference R8 (at 2.75 1.45 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 4k7 (at 0 1.65 90) (layer F.Fab)
+    (fp_text value 47k (at 0 1.65 90) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -1 0.6) (end -1 -0.6) (layer F.Fab) (width 0.1))
@@ -6030,7 +6030,7 @@
     (fp_text reference R33 (at 0 -1.65 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 10k (at 0 1.65 90) (layer F.Fab)
+    (fp_text value 4k7 (at 0 1.65 90) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -1 0.6) (end -1 -0.6) (layer F.Fab) (width 0.1))
